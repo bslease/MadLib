@@ -14,8 +14,8 @@ public class MadLib : MonoBehaviour
     // 7. And ever since that day the [place_2] [past_tense_verb_5] the [adjective_1] [noun_1] and the [adjective_4] [noun_4] and the [noun_6] of the [adjective_5] [noun_5].
     // 8. The End.
 
-    List<string> nouns = new List<string> { "monkey", "banana", "cheese", "bunny"};
-    List<string> adjectives = new List<string> { "happy", "sad", "royal", "magic" };
+    List<string> nouns = new List<string> { "monkey", "banana", "cheese", "bunny", "rabbit"};
+    List<string> adjectives = new List<string> { "happy", "sad", "royal", "magic", "facetious" };
     List<string> places = new List<string> { "town", "village", "palace", "schoolyard" };
     List<string> verbs = new List<string> { "sweep", "wash", "dance with", "fly over" };
     List<string> pasttenseverbs = new List<string> { "stopped", "began", "started", "continued" };
@@ -33,7 +33,7 @@ public class MadLib : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            // sotry line 1
+            // story line 1
             string adjective_1 = adjectives[Random.Range(0, adjectives.Count)];
             string noun_1 = nouns[Random.Range(0, nouns.Count)];
             Debug.Log($"Once upon a time there was a {adjective_1} {noun_1}.");
